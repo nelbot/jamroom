@@ -1,7 +1,21 @@
-$body-bg: #ffffff;
-$navbar-inverse-link-color: #fc3f1f;
-$navbar-inverse-bg: #ffffff;
-$navbar-inverse-link-hover-color: #000000;
-$navbar-inverse-brand-hover-color: #fc3f1f;
+$body-bg: 								#ffffff;
+$navbar-default-link-color:				#777777;
+$navbar-bg:								#ffffff;
+$navbar-default-link-hover-color:		#fc3f1f;
+$navbar-default-brand-hover-color:		#fc3f1f;
+$navbar-default-brand-color:			#fc3f1f;
+$brand-primary: 						#fc3f1f;
 
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.about-page {
+	text-align: center;
+}

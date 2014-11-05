@@ -7,4 +7,7 @@ class PagesController < ApplicationController
 
   def miami
   end
+
+  def test
+  end
 end

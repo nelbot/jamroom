@@ -1,3 +1,11 @@
+<head>
+	<title>Audio Player</title>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" media="screen">
+</head>
+<body>
 <div class="miami-page">
 	
 
@@ -8,11 +16,12 @@
 	      <img src="https://s3.amazonaws.com/miamiartist/sunghosts+logo.jpg" height="300" width="300">
 	      <div class="caption">
 	        <h2 style="text-align:center;">Sunghosts</h2>
-	       	<h4 style="text-align:center;">Sunnyside Uppercut</h4>
+	       	<h4 style="text-align:center;">Til the City Goes Under</h4>
 	        
-	        <div class="soundcloud-player">
-
-	        </div>
+	        <div class="audio-player">
+      
+      <audio id="audio-player" src="https://s3.amazonaws.com/jamroomtracks/1+Til+the+City+Goes+Under.wav" type="audio/mp3" controls="controls"></audio>
+</div>
 
 	        <div class="info-for-show">
 	        	<p><dl class="dl-horizontal">
@@ -65,11 +74,11 @@
 	    <div class="thumbnail">
 	      <img src="https://s3.amazonaws.com/miamiartist/wilkesoswald300.png" height="300" width="300">
 	      <div class="caption">
-	        <h2 style="text-align:center;">Wilked Oswald</h2>
+	        <h2 style="text-align:center;">Wilkes Oswald</h2>
 	       	<h4 style="text-align:center;">Southern Point</h4>
 	        
 	        <div class="souncloud-player">
-
+	      
 	        </div>
 
 	        <div class="info-for-show">
@@ -89,3 +98,16 @@
 	      </div>
 	    </div>
 	  </div>
+<script>
+    $(document).ready(function() {
+        $('#audio-player').mediaelementplayer({
+            alwaysShowControls: true,
+            features: ['playpause','volume','progress'],
+            audioVolume: 'horizontal',
+            audioWidth: 400,
+            audioHeight: 120
+        });
+    });
+</script>
+</body>
+	  

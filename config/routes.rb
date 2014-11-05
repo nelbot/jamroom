@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root "pins#index"
   get "about" => "pages#about" #creates about_path
   get "miami" => "pages#miami" #creates miami_path
+  get "test" => "pages#test" #creates test_path
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
